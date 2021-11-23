@@ -6,7 +6,7 @@ Prerequiste: jdk 1.8, Eclipse compatible with JDK 1.8
 
 ClearingHouseAssessmentWebSearch is Springboot app webapp with simple html page search
 
-Check out code and run the project as Springboot app in Eclipse url: http://localhost:8080/search
+Check out code and run the project as Springboot app in Eclipse url: http://localhost:8080/clearinghouse/search
 
 ClearingHouseCommandLineSearch is a simple app to search in a console
 
