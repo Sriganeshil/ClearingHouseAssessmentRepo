@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+
+</head>
+
+<body>
+<h1> Search Bank Info</h1>
+
+<h2>
+<form>
+  <label for="Search">Search:</label><br>
+  <input type="text" id="searchData" name="searchData"><br>
+  <input type="submit" value="Submit">
+</form>
+</h2>
+
+
+
+</h1>
+
+<p><span th:text="'Results:  ' + ${searchData}"></span></p>
+</body>
+</html>
