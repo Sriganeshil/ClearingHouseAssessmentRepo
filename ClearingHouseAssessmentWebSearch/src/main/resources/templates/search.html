@@ -20,6 +20,14 @@
 
 </h1>
 
-<p><span th:text="'Results:  ' + ${searchData}"></span></p>
+    <table>
+            <tr>
+              <th>Result</th>              
+            </tr>
+           <tr th:each="Result: ${searchData}">
+    		 <td th:text="${Result}" />   
+			</tr>
+          <table>
+
 </body>
 </html>
