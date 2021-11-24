@@ -1,5 +1,7 @@
 package com.clearinghouse.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +24,7 @@ public class ClearingHouseController {
 	
     @GetMapping("/search")
     public String getResult(@RequestParam(name = "searchData", required = false, defaultValue = "") String searchData, Model model){
-    	String result ="";
+    	List result = null;
     	try {
     		result = dataSearchService.fileSearch(loader.getSearchData(), searchData);
 		} catch (Exception e) {
